@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Custom price range slider created with javascript</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/pricerange.css">
+      <script src="js/pricerange.js"></script>
+  </head>
+
+  <body>
+      <div class="container">
+          <h1 class="text-center">
+              Custom Price Range Slider
+          </h1>
+          <div class="row mt-2">
+              <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                  <b class="minprice">₹ 5,000</b>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6 text-right">
+                  <b class="maxprice">₹ 2,50,000</b>
+              </div>
+          </div>
+          <div class="row mt-2">
+              <div class="col-md-12">
+                  <div class="range-slider"><span class="range-slider-selection"></span>
+                      <input class="range-slider-min" type="range" min="5000" max="250000" step="1" value="5000" />
+                      <input class="range-slider-max" type="range" min="5000" max="250000" step="1" value="250000" />
+                      <br />
+                      <input type="text" class="minmaxprice" name="pricerange" value="" />
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+
+</html>
