@@ -1,0 +1,62 @@
+/* Custom price range slider created by Pawan Mall | www.pawanmall.net */
+
+.range-slider {
+    margin: 0 0;
+    position: relative;
+    height: 20px;
+}
+.range-slider::before,
+.range-slider-selection {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -2px;
+    height: 3px;
+    z-index: 2;
+}
+.range-slider-selection {
+    background: orange;
+    left: 0px;
+    right: 0px;
+}
+.range-slider::before {
+    background: #ccc;
+    left: 0px;
+    right: 0px;
+}
+.range-slider-min,
+.range-slider-max {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    outline: none;
+    -webkit-appearance: none;
+}
+.range-slider-min::-webkit-slider-thumb,
+.range-slider-max::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: all;
+    position: relative;
+    z-index: 3;
+    outline: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.range-slider-min:active::-webkit-slider-thumb,
+.range-slider-max:active::-webkit-slider-thumb {
+    background: #f3f3f3;
+}
+
+.minmaxprice {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
